@@ -58,7 +58,6 @@ pipeline:
 
                                         mvn -Dmaven.test.skip=true clean install -X"
                                     privileged: false
-                                    shell: Bash
                                     resources:
                                         limits:
                                             memory: 1Gi
