@@ -54,9 +54,9 @@ pipeline:
                                 spec:
                                     connectorRef: account.bootcampdockerhub
                                     image: nikpap/mvn-openjdk-8:harness
-                                    command: "cd payment-service\r
-
-                                        mvn -Dmaven.test.skip=true clean install -X"
+                                    command: |-
+                                        cd payment-service
+                                        mvn -Dmaven.test.skip=true clean install -X
                                     privileged: false
                                     resources:
                                         limits:
