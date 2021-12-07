@@ -169,5 +169,5 @@ pipeline:
           value: <+input>
         - name: ffsdkkeyprod
           type: String
-          default: payment-service-sdk
+          default: 31155581-43b5-4d2b-9604-9bc31071aa19
           value: <+input>
