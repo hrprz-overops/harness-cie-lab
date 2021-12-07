@@ -77,6 +77,12 @@ pipeline:
                                         limits:
                                             memory: 1Gi
                                             cpu: "1"
+                  serviceConfig:
+                      serviceRef: ""
+                      serviceDefinition:
+                          type: Kubernetes
+                          spec:
+                              variables: []
               variables: []
         - stage:
               name: DeployDev
